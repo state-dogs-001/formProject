@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มลาพักการศึกษา</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="jQuery/jquery.datetimepicker.min.css">
+    <link rel="shortcut icon" href="images/Maejo_icon_1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="jQuery/jquery.datetimepicker.full.min.js"></script>
+
+</head>
+
+<body>
+
+    <form class="was-validated bg-success">
+        <div class="container">
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container mt-2 mb-3">
+                        <div class="row row-cols-1 g-3">
+
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active bg-success" aria-current="page" href="index_student.html">สำหรับนักศึกษา</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-success" href="index_parent.html">สำหรับผู้ปกครอง</a>
+                                  </li>
+                            </ul>
+
+                            <div class="col-md-12 text-center">
+                                <img src="images/Maejo_icon_1.png" alt="">
+                            </div>
+
+                            <div class="col-md-12 text-center mb-3">
+                                <h1>คำร้องขอพักการศึกษา (สำหรับนักศึกษา)</h1>
+                                <br>
+                                <h3>มหาวิทยาลัยแม่โจ้</h3>
+                            </div>
+
+                            <div class="col-md-10">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <div class="input-group-text bg-success">
+                                        <i class="material-icons" style="color: aliceblue;">date_range</i>
+                                    </div>
+                                    <input type="text" name="date" id="picker" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="dean_of_faculty">เรียน คณบดีคณะ</label>
+                                <select id="dean_of_faculty" class="form-select is-invalid" required>
+                                    <option selected disabled value=""> เลือกคณะ </option>
+                                    <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                                    <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                    <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                                    <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                    <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                                    <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                                    <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                                    <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                                    <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                                    <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+                                    <option value="วิทยาลัยพลังงานทดแทน">วิทยาลัยพลังงานทดแทน</option>
+                                    <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ</option>
+                                    <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-8">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-2">
+                                <label></label>
+                                <select class="form-select is-invalid" id="st_choose_b_name" required>
+                                    <option selected disabled value="">เลือกคำนำหน้าชื่อ</option>
+                                    <option value="นาย">นาย</option>
+                                    <option value="นาง">นาง</option>
+                                    <option value="นางสาว">นางสาว</option>
+                                </select>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 position-relative">
+                                <label for="st_first_name">ชื่อ</label>
+                                <input type="text" class="form-control" placeholder="โปรดกรอกชื่อของท่าน"
+                                    name="first_name" id="st_first_name" pattern="^[ก-๏\s]+$" required>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="st_last_name">นามสกุล</label>
+                                <input type="text" class="form-control" placeholder="โปรดกรอกนามสกุลของท่าน"
+                                    name="last_name" id="st_last_name" pattern="^[ก-๏\s]+$" required>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="student_id">รหัสนักศึกษา</label>
+                                <input type="text" class="form-control" placeholder="โปรดกรอกรหัสนักศึกษาของท่าน"
+                                    name="student_id" id="student_id" maxlength="10" pattern="[0-9]{10}" required>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="student_phone">เบอร์โทรติดต่อ</label>
+                                <input type="text" class="form-control"
+                                    placeholder="โปรดกรอกหมายเลขเบอร์โทรศัพท์ของท่าน" name="student_phone"
+                                    id="student_phone" maxlength="10" pattern="^0[0-9]{9}" required>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-1">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>หลักสูตรปริญญาตรี</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="course_1" id="student_course_1">
+                                    <label class="form-check-label text-secondary" for="student_course_1">
+                                        4-5 ปี
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="course_1" id="student_course_2"
+                                        checked>
+                                    <label class="form-check-label text-secondary" for="student_course_2">
+                                        4 ปีเทียบเข้าเรียน (2 ปี)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>ภาคเรียน</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="course_2" id="student_course_3">
+                                    <label class="form-check-label text-secondary" for="student_course_3">
+                                        ภาคปกติ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="course_2" id="student_course_4"
+                                        checked>
+                                    <label class="form-check-label text-secondary" for="student_course_4">
+                                        ภาคสมทบ
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="student_faculty">คณะ</label>
+                                <select id="student_faculty" class="form-select is-invalid" required>
+                                    <option selected disabled value=""> เลือกคณะ </option>
+                                    <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                                    <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                    <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                                    <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                    <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                                    <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                                    <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                                    <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                                    <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                                    <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+                                    <option value="วิทยาลัยพลังงานทดแทน">วิทยาลัยพลังงานทดแทน</option>
+                                    <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ</option>
+                                    <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="student_branch">สาขา</label>
+                                <input type="text" class="form-control" placeholder="โปรดกรอกชื่อสาขาของท่าน"
+                                    name="student_branch" id="student_branch" pattern="^[ก-๏\s]+$" required>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                นักศึกษาต้องการจะพักการศึกษาในปีการศึกษาที่
+                            </div>
+
+                            <div class="col-md-2">
+                                <select class="form-select is-invalid" id="choose_2" required>
+                                    <option selected disabled value="">เลือกปีการศึกษา</option>
+                                    <option value="2562">2562</option>
+                                    <option value="2563">2563</option>
+                                    <option value="2564">2564</option>
+                                    <option value="2565">2565</option>
+                                    <option value="2566">2566</option>
+                                </select>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <select class="form-select is-invalid" id="choose_3" required>
+                                    <option selected disabled value="">เลือกเทอม</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <div class="valid-feedback">
+                                    ข้อมูลถูกต้อง
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="st_because">จุดประสงค์ที่พักการศึกษา</label>
+                                <textarea class="form-control is-invalid" id="st_because"
+                                    placeholder="ต้องการจะพักการศึกษาเนื่องจาก..." style="height: 20ch;"
+                                    required></textarea>
+                                <div class="invalid-feedback">
+                                    กรุณากรอกข้อมูล
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="st_band">ลายเซ็นของนักศึกษา</label>
+                                <input type="file" class="form-control" id="pr_band" required>
+                                <div id="st_band" class="invalid-feedback">
+                                    กรุณาอัปโหลดรูป.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <!-- ช่องว่าง -->
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <input type="checkbox" class="form-check-input" id="FormCheck1" required>
+                                <label class="form-check-label" for="FormCheck1">ข้าพเจ้ายอมรับ</label>
+                                <div class="invalid-feedback">กรุณาตรวจสอบข้อมูลก่อนกดยืนยัน</div>
+                            </div>
+
+                            <div class="col-12 text-center mt-5">
+                                <button class="btn btn-danger" type="reset">ยกเลิก</button>
+                                <label style="width: 2ch;">
+                                    <!-- เว้นบรรทัด -->
+                                </label>
+                                <button class="btn btn-success" type="submit">ยืนยัน</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        $('#picker').datetimepicker({
+            timepicker: false,
+            datepicker: true,
+            format: 'Y-m-d', //formatDate
+            value: Date.now(),
+            week: true
+        })
+
+    </script>
+
+</body>
+
+</html>
